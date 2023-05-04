@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+}
+#addbook{
+    background-color: rgb(210, 224, 224) !important;
+}
+
+#viewbook{
+    display: none;
+}
+#editbook{
+    display: none;
+}
+#bookSuccess, #bookDanger{
+    display: none;
+}
