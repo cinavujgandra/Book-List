@@ -9,7 +9,6 @@ export const tbodyBooks = document.getElementById('tbodyBooks')
 let id = 1
 let booksArray = []
 
-
 export class Book {
   constructor(title, author, ISBN) {
     this.title = title;
@@ -25,8 +24,6 @@ export class Book {
   }
 }
 
-
-
 export const createBook = (e) => {
   e.preventDefault()
   if (title.value != "" && author.value != "" && ISBN.value != "") {
@@ -36,13 +33,8 @@ export const createBook = (e) => {
     const books = viewBooks(booksArray)
     tbodyBooks.innerHTML = books
 
-  
-
     successMessage()
 
-    // setInterval(function(){
-    //   bookSuccess.style.display = "none";
-    // },2000)
   } else {
     errorMessage()
   }

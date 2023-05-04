@@ -14,7 +14,6 @@ console.log(bookArr);
     return books.toString()
 
 
-
 }
 
 
