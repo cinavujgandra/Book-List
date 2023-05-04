@@ -15,7 +15,6 @@ export class Book {
     this.author = author;
     this.ISBN = ISBN;
   }
-
   getBook() {
     const book = {
       'ID':id, 'title': this.title, 'author': this.author, 'ISBN': this.ISBN
