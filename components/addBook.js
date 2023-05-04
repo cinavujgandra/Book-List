@@ -17,7 +17,7 @@ export class Book {
   }
   getBook() {
     const book = {
-      'ID':id, 'title': this.title, 'author': this.author, 'ISBN': this.ISBN
+      'ID':id++, 'title': this.title, 'author': this.author, 'ISBN': this.ISBN
     }
     return book
   }

@@ -10,7 +10,8 @@ console.log(bookArr);
                     <td>${el.ISBN}</td>
                 </tr>`
     })
-    return books.toString()
+    
+    return books.toString().replace(',','')
 }
 
 
