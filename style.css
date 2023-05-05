@@ -8,9 +8,7 @@ body{
 #viewbook{
     display: none;
 }
-#editbook{
-    display: none;
-}
+
 #bookSuccess, #bookDanger{
     display: none;
 }

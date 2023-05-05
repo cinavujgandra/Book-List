@@ -1,7 +1,7 @@
 
 
 export const viewBooks = (bookArr) => {
-console.log(bookArr);
+
     const books = bookArr.map(el => {
         return `<tr>
                     <th scope="row">${el.ID}</th>
@@ -11,7 +11,7 @@ console.log(bookArr);
                 </tr>`
     })
     
-    return books.toString().replace(',','')
+    return books.join("");
 }
 
 

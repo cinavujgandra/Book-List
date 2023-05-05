@@ -27,13 +27,10 @@ export const createBook = (e) => {
   e.preventDefault()
   if (title.value != "" && author.value != "" && ISBN.value != "") {
     const book = new Book(title.value, author.value, ISBN.value)
-   
     booksArray = [...booksArray, ...[book.getBook()]]
-    const books = viewBooks(booksArray)
-    tbodyBooks.innerHTML = books
-
+    tbodyBooks.innerHTML = viewBooks(booksArray)
+    
     successMessage()
-
   } else {
     errorMessage()
   }
